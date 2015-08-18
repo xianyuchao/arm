@@ -1,0 +1,36 @@
+生成公钥
+# ssh-keygen -t rsa -C "你注册github所用的邮箱地址"
+
+查看公钥
+# cat ~/.ssh/id_rsa
+
+
+
+
+
+
+///windows git bash
+
+ssh-keygen
+
+一路回车
+找到生成的 pub文件，在github网站添加该key
+
+git init
+
+git clone git@github.com:xianyuchao/arm.git
+
+
+git commit -a //提交所有文件
+git commit add.txt	//单个文件
+
+git config --global user.email brother0952@163.com
+git config --global user.name xianyuchao
+
+git log		//查看日志
+
+
+
+git reset  –hard HEAD~100	//回到前100个版本
+
+git reflog		//回到最新
