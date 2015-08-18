@@ -34,3 +34,5 @@ git log		//查看日志
 git reset  –hard HEAD~100	//回到前100个版本
 
 git reflog		//回到最新
+
+git checkout -f		//强制还原，不加参数不行
