@@ -38,3 +38,11 @@ git reset  –hard HEAD~100	//回到前100个版本
 git reflog		//回到最新
 
 git checkout -f		//强制还原，不加参数不行
+
+
+git checkout master	//回到主分支
+
+
+git fetch --all
+git reset --hard origin/master
+git fetch 只是下载远程的库的内容，不做任何的合并 git reset 把HEAD指向刚刚下载的最新的版本
