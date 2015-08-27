@@ -20,6 +20,9 @@ git init
 
 git clone git@github.com:xianyuchao/arm.git
 
+git clone git@github.com:michaelliao/bootstrap.git	//famous bootstrap
+
+
 
 git commit -a //提交所有文件
 git commit add.txt	//单个文件
