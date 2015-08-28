@@ -27,7 +27,7 @@ git clone git@github.com:michaelliao/bootstrap.git	//famous bootstrap
 git commit -a //提交所有文件
 git commit add.txt	//单个文件
 
-git commit *.cpp *.h *.pro *.ui *.md
+git commit *.cpp *.h *.pro *.ui *.md .gitignore
 
 git config --global user.email brother0952@163.com
 git config --global user.name xianyuchao

@@ -3,5 +3,3 @@ release/
 *.Debug
 *.Release
 *.user
-
-!.gitignore

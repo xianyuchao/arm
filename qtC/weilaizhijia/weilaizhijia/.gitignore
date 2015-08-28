@@ -4,4 +4,4 @@ release/
 *.Release
 *.user
 
-!.gitignore
+*.pro.user.3.2-pre1
