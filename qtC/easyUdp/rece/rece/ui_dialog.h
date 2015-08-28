@@ -16,9 +16,6 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
@@ -28,32 +25,20 @@ class Ui_Dialog
 public:
     QDialogButtonBox *buttonBox;
     QTextEdit *textEdit;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton;
-    QLabel *label;
 
     void setupUi(QDialog *Dialog)
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(353, 373);
+        Dialog->resize(240, 320);
         buttonBox = new QDialogButtonBox(Dialog);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
-        buttonBox->setGeometry(QRect(0, 310, 221, 41));
+        buttonBox->setGeometry(QRect(10, 270, 221, 41));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         textEdit = new QTextEdit(Dialog);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(30, 30, 181, 201));
-        lineEdit = new QLineEdit(Dialog);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(220, 30, 113, 20));
-        pushButton = new QPushButton(Dialog);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(50, 270, 75, 23));
-        label = new QLabel(Dialog);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(230, 110, 81, 71));
 
         retranslateUi(Dialog);
         QObject::connect(buttonBox, SIGNAL(accepted()), Dialog, SLOT(accept()));
@@ -65,8 +50,6 @@ public:
     void retranslateUi(QDialog *Dialog)
     {
         Dialog->setWindowTitle(QApplication::translate("Dialog", "Dialog", 0));
-        pushButton->setText(QApplication::translate("Dialog", "clear", 0));
-        label->setText(QApplication::translate("Dialog", "TextLabel", 0));
     } // retranslateUi
 
 };

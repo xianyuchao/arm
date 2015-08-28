@@ -29,3 +29,10 @@ else:unix: LIBS += -L$$PWD/../../mylib/build-untitled-Desktop_Qt_5_4_0_MinGW_32b
 INCLUDEPATH += $$PWD/../../mylib/build-untitled-Desktop_Qt_5_4_0_MinGW_32bit-Debug/debug
 DEPENDPATH += $$PWD/../../mylib/build-untitled-Desktop_Qt_5_4_0_MinGW_32bit-Debug/debug
 INCLUDEPATH += $$PWD/../../mylib/untitled
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../mylib/untitled/release/ -luntitled
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../mylib/untitled/debug/ -luntitled
+else:unix: LIBS += -L$$PWD/../../mylib/untitled/ -luntitled
+
+INCLUDEPATH += $$PWD/../../mylib/untitled
+DEPENDPATH += $$PWD/../../mylib/untitled
